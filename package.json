@@ -19,6 +19,7 @@
     "install": "^0.13.0",
     "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.2",
+    "vanilla-tilt": "^1.8.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

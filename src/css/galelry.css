@@ -47,24 +47,76 @@
 
 /*<!--=========== /SECTION gallery=================-->*/
 img {
-  display: block;
-  width: 360px;
+  /* display: block; */
+  /* width: 360px; */
   /*height: 200px; */
 }
 
 .gallery {
+  position: relative;
   width: 1128px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  margin: 0 auto;
 }
 
+.container {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.gallery-item {
+  position: relative;
+  width: 360px;
+  height: 240px;
+  transform-style: preserve-3d;
+}
+
+
 .gallery-image {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform-style: preserve-3d;
   transition: transform 0.25s ease;
 }
 
+
+
+.property-list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateZ(20px) scaleY(0);
+  padding: 10px 15px;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transition: 0.4s;
+  /* transform: translateZ(50px) scaleY(1); */
+
+
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery-item:hover .property-list {
+  transform: translateZ(50px) scaleY(1);
+}
+
+
+/* <!--=========== SECTION =================-->*/
 .gallery-link:hover .gallery-image,
 .gallery-link:focus .gallery-image,
 .gallery-link:active .gallery-image {
@@ -94,7 +146,7 @@ img {
 
 
 
-/* <!--=========== SECTION =================-->*/
+
 
 
 /*<!--=========== /SECTION =================-->*/
@@ -112,3 +164,5 @@ img {
   cursor: pointer;
   outline: none; */
 }
+
+/*<!--=========== /SECTION =================-->*/

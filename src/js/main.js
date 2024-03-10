@@ -1,9 +1,8 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import VanillaTilt from 'vanilla-tilt';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
-// import VanillaTilt from 'vanilla-tilt';
 
 import { getPhotos } from './pixabay-api';
 import { createMarkup } from './render-functions';
@@ -36,6 +35,15 @@ function onFormSubmit(e) {
 
       alert(`We found ${res.total} photos`);
       gallery.innerHTML = createMarkup(res.hits);
+      let galleryList = new SimpleLightbox('.gallery a', {
+        captionsData: 'alt',
+        captionDelay: 250,
+      });
+
+      VanillaTilt.init(document.querySelectorAll('.data-tilt'), {
+        max: 25,
+        speed: 400,
+      });
     })
     .catch(console.log);
 
