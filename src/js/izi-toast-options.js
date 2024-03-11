@@ -13,37 +13,42 @@ const errorMsg = {
 };
 
 const okMsg = {
-  title: 'Ok',
-  message: '`We found ${} photos`',
+  // title: 'Ok',
   iconUrl: './img/ok.svg',
   backgroundColor: 'rgb(89, 161, 13)',
   messageColor: 'rgb(255, 255, 255)',
   titleColor: 'rgb(255, 255, 255)',
   position: 'topRight',
   close: 'rgb(255, 255, 255)',
+  messageSize: '16',
+  messageLineHeight: '24',
 };
 
 const warningMsg = {
-  title: 'Caution',
-  message: 'You forgot important data',
+  // title: 'Caution',
+  message: 'You forgot to enter a search query',
   iconUrl: './img/warning.svg',
   backgroundColor: 'rgb(255, 160, 0)',
   messageColor: 'rgb(255, 255, 255)',
   titleColor: 'rgb(255, 255, 255)',
-  position: 'center',
+  position: 'topRight',
   close: 'rgb(255, 255, 255)',
+  messageSize: '16',
+  messageLineHeight: '24',
 };
 
 const hello = {
-  title: 'Hello',
-  message: 'Welcome!',
+  // title: 'Hello',
+  message: 'Welcome! Please enter your search query!',
 
   iconUrl: './img/bell.svg',
   backgroundColor: 'rgb(0, 153, 255)',
   messageColor: 'rgb(255, 255, 255)',
   titleColor: 'rgb(255, 255, 255)',
-  position: 'center',
+  position: 'topRight',
   close: 'rgb(255, 255, 255)',
+  messageSize: '16',
+  messageLineHeight: '24',
 };
 
 export { errorMsg, okMsg, warningMsg, hello };

@@ -20,6 +20,3 @@ export function getPhotos(q, page) {
     return res.json();
   });
 }
-getPhotos('tree', 1)
-  .then(res => console.log(res.hits))
-  .catch(error => console.log(error.message));

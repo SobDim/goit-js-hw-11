@@ -10,9 +10,9 @@ export function createMarkup(arr) {
         comments,
         downloads,
       } = arr;
-      return ` <li class="gallery-item data-tilt" > 
+      return ` <li class="gallery-item" data-tilt> 
               <a class="gallery-link" href="${largeImageURL}">
-              <img
+              <img  
                 class="gallery-image"
                 src="${webformatURL}"
                 alt="${tags}"
