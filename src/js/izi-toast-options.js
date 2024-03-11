@@ -14,6 +14,7 @@ const errorMsg = {
 
 const okMsg = {
   title: 'Ok',
+  message: '`We found ${} photos`',
   iconUrl: './img/ok.svg',
   backgroundColor: 'rgb(89, 161, 13)',
   messageColor: 'rgb(255, 255, 255)',

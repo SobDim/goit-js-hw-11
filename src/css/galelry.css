@@ -1,157 +1,187 @@
-/* <!--=========== SECTION FORM=================-->*/
-.search-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  letter-spacing: 0.04rem;
-}
+ html {
+   height: 100%;
+   /* width: 100%; */
+ }
 
-.search-input {
-  padding: 8px 16px;
-  margin-right: 8px;
+ html {
 
-  width: 272px;
+   background:
+     linear-gradient(40deg, #c6ffdd,
+       #fbd786,
+       #f7797d);
 
-  border: 1px solid rgb(128, 128, 128);
-  border-radius: 4px;
+   background-size: 200% 200%;
+   animation: gradient 10s ease infinite;
+ }
 
-  line-height: 24px;
-  letter-spacing: 0.04rem;
-}
+ @keyframes gradient {
+   0% {
+     background-position: 0 50%;
+   }
 
-.search-input:hover {
-  border: 1px solid rgb(0, 0, 0);
-}
+   50% {
+     background-position: 100% 50%;
+   }
 
-.search-input:focus,
-.search-input:active {
-  outline: none;
-  border: 1px solid rgb(78, 117, 255);
-}
+   100% {
+     background-position: 0 50%;
+   }
+ }
 
-.search-btn {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 8px;
-  background: rgb(78, 117, 255);
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04rem;
-}
+ /* <!--=========== SECTION FORM=================-->*/
+ .search-form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   letter-spacing: 0.04rem;
+ }
 
-.search-btn:hover {
-  background: rgb(108, 140, 255);
-}
+ .search-input {
+   padding: 8px 16px;
+   margin-right: 8px;
 
-/*<!--=========== /SECTION gallery=================-->*/
-img {
-  /* display: block; */
-  /* width: 360px; */
-  /*height: 200px; */
-}
+   width: 272px;
 
-.gallery {
-  position: relative;
-  width: 1128px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  margin: 0 auto;
-}
+   border: 1px solid rgb(128, 128, 128);
+   border-radius: 4px;
 
-.container {
-  position: relative;
-  transform-style: preserve-3d;
-}
+   line-height: 24px;
+   letter-spacing: 0.04rem;
+ }
 
-.gallery-item {
-  position: relative;
-  width: 360px;
-  height: 240px;
-  transform-style: preserve-3d;
-}
+ .search-input:hover {
+   border: 1px solid rgb(0, 0, 0);
+ }
 
+ .search-input:focus,
+ .search-input:active {
+   outline: none;
+   border: 1px solid rgb(78, 117, 255);
+ }
 
-.gallery-image {
+ .search-btn {
+   padding: 8px 16px;
+   border: none;
+   border-radius: 8px;
+   background: rgb(78, 117, 255);
+   color: rgb(255, 255, 255);
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0.04rem;
+ }
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+ .search-btn:hover {
+   background: rgb(108, 140, 255);
+ }
 
-  transform-style: preserve-3d;
-  transition: transform 0.25s ease;
-}
+ /*<!--=========== /SECTION gallery=================-->*/
+ img {
+   /* display: block; */
+   /* width: 360px; */
+   /*height: 200px; */
+ }
 
+ .gallery {
+   position: relative;
+   width: 1128px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   margin: 0 auto;
+ }
 
+ .container {
+   position: relative;
+   transform-style: preserve-3d;
+ }
 
-.property-list {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background: rgba(255, 255, 255, 0.65);
-  transform: translateZ(20px) scaleY(0);
-  padding: 10px 15px;
-  transform-origin: bottom;
-  transform-style: preserve-3d;
-  transition: 0.4s;
-  /* transform: translateZ(50px) scaleY(1); */
-
-
-
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.gallery-item:hover .property-list {
-  transform: translateZ(50px) scaleY(1);
-}
+ .gallery-item {
+   position: relative;
+   width: 360px;
+   height: 240px;
+   transform-style: preserve-3d;
+ }
 
 
-/* <!--=========== SECTION =================-->*/
-.gallery-link:hover .gallery-image,
-.gallery-link:focus .gallery-image,
-.gallery-link:active .gallery-image {
-  transform: scale(1.04);
-}
+ .gallery-image {
 
-.sl-overlay {
-  background: rgba(46, 47, 66, 0.8);
-}
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
 
-.sl-wrapper .sl-close {
-  color: rgba(255, 255, 255, 1);
-}
-
-
-.sl-wrapper .sl-counter {
-
-  color: rgba(255, 255, 255, 1);
-
-
-}
-
-.sl-wrapper .sl-navigation button {
-
-  color: rgba(255, 255, 255, 1);
-}
+   transform-style: preserve-3d;
+   transition: transform 0.25s ease;
+ }
 
 
 
+ .property-list {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   background: rgba(255, 255, 255, 0.65);
+   transform: translateZ(20px) scaleY(0);
+   padding: 10px 15px;
+   transform-origin: bottom;
+   transform-style: preserve-3d;
+   transition: 0.4s;
+   /* transform: translateZ(50px) scaleY(1); */
 
 
 
-/*<!--=========== /SECTION =================-->*/
-.iziToast>.iziToast-close {
-  /* position: absolute;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+ }
+
+ .gallery-item:hover .property-list {
+   transform: translateZ(50px) scaleY(1);
+ }
+
+
+ /* <!--=========== SECTION =================-->*/
+ .gallery-link:hover .gallery-image,
+ .gallery-link:focus .gallery-image,
+ .gallery-link:active .gallery-image {
+   transform: scale(1.04);
+ }
+
+ .sl-overlay {
+   background: rgba(46, 47, 66, 0.8);
+ }
+
+ .sl-wrapper .sl-close {
+   color: rgba(255, 255, 255, 1);
+ }
+
+
+ .sl-wrapper .sl-counter {
+
+   color: rgba(255, 255, 255, 1);
+
+
+ }
+
+ .sl-wrapper .sl-navigation button {
+
+   color: rgba(255, 255, 255, 1);
+ }
+
+
+
+
+
+
+ /*<!--=========== /SECTION =================-->*/
+ .iziToast>.iziToast-close {
+   /* position: absolute;
   right: 100px;
   top: 0;
   border: 0;
@@ -159,10 +189,10 @@ img {
   opacity: 0.6;
   width: 42px;
   height: 100%; */
-  background: url("./img/close.svg") no-repeat 50% 50%;
-  /* background-size: 16px;
+   background: url("./img/close.svg") no-repeat 50% 50%;
+   /* background-size: 16px;
   cursor: pointer;
   outline: none; */
-}
+ }
 
-/*<!--=========== /SECTION =================-->*/
+ /*<!--=========== /SECTION =================-->*/
